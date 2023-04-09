@@ -1,12 +1,12 @@
-function loadData(){
-    if(data) {
+function loadData() {
+    if (data) {
         list.innerHTML = ""
-        for(let i = 0; i < data.length; i++) {
+        for (let i = 0; i < data.length; i++) {
             list.innerHTML += `
             <div class="list-item" tabindex="${i}" data-day="${data[i].day}" data-weight="${data[i].weight}">Day ${data[i].day}</div>
             `
         }
-document.querySelector('#list .list-item').focus();
+        document.querySelector('#list .list-item').focus();
 
     }
 }
@@ -42,10 +42,10 @@ function showDetails() {
     document.querySelector('header').innerText = "Day " + document.activeElement.dataset.day;
     document.querySelector('.weight').innerText = document.activeElement.dataset.weight + " kg"
     document.querySelector('.note.secondary').innerText = document.activeElement.dataset.note || "-"
-    setSoftkey("Back", " ", "Options")
+    setSoftkey("Back", "EDIT", "Options")
 }
 
-function goBack(){
+function goBack() {
     details.style.left = "240px";
     document.querySelector('header').innerText = "Diet Tracker";
     setSoftkey("BMI", "VIEW", "Options")
@@ -59,10 +59,10 @@ function setSoftkey(a, b, c) {
 
 function handleSoftkeys(key) {
     if (key == "SoftLeft") {
-        if (details.style.left == "240px") return window.location.href = "/bmi.html";
         if (details.style.left == "0px") return goBack();
+        if (details.style.left == "240px") return window.location.href = "/bmi.html";
     }
-    if(key == "Enter") {
-        if(main.style.left == "0px") showDetails();
+    if (key == "Enter") {
+        if (details.style.left == "240px") showDetails();
     }
 }

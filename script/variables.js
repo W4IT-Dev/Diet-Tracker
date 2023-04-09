@@ -6,6 +6,7 @@ let softkeydisplay = document.querySelector('#footer1');
 let left = softkeydisplay.firstElementChild;
 let center = softkeydisplay.children[1];
 let right = softkeydisplay.lastElementChild;
+let newday = document.querySelector('#newDay');
 
 let currentSettings = JSON.stringify(localStorage.settings) || {
     weightUnit: "kg",

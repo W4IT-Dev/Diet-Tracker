@@ -11,23 +11,20 @@
 
 <body onload="loadData();">
     <header>Diet Tracker</header>
-    <div id="main" style="left: 0px">
-        <div id="list" class="list">
-            <div class="list-item" tabindex="0" data-day="1" data-weight="178">Day 1</div>
+    <div id="list" class="list">
+        <div class="list-item" tabindex="0" data-day="1" data-weight="178">Day 1</div>
 
-            <div class="list-item" tabindex="1" data-day="1">Day 1</div>
-            <div class="list-item" tabindex="2" data-day="1">Day 1</div>
-            <div class="list-item" tabindex="3" data-day="1">Day 1</div>
-            <div class="list-item" tabindex="4" data-day="1">Day 1</div>
-            <div class="list-item" tabindex="5" data-day="1">Day 1</div>
+        <div class="list-item" tabindex="1" data-day="1">Day 1</div>
+        <div class="list-item" tabindex="2" data-day="1">Day 1</div>
+        <div class="list-item" tabindex="3" data-day="1">Day 1</div>
+        <div class="list-item" tabindex="4" data-day="1">Day 1</div>
+        <div class="list-item" tabindex="5" data-day="1">Day 1</div>
 
-            <div class="list-item" tabindex="6">Day 1</div>
-            <div class="list-item" tabindex="7">Day 1</div>
-
-        </div>
-        
+        <div class="list-item" tabindex="6">Day 1</div>
+        <div class="list-item" tabindex="7">Day 1</div>
     </div>
-    <div id="details" class="list">
+
+    <div id="details" class="list" style="left: 240px">
         <div class="list-item data">
             <div class="name">Weight</div>
             <div class="info weight">49 kg</div>
@@ -35,6 +32,17 @@
         <div class="list-item note">
             <div class="name">Notes</div>
             <div class="info note secondary">I felt very very sore because i ate a lot</div>
+        </div>
+    </div>
+    <div id="newDay">
+        <div
+            style="position: relative; top: var(--header-height); display: flex; flex-direction: column; gap: 0.5rem; justify-content: center;">
+            <div>
+                <label for="weight">Weight:</label>
+                <input type="number" class="input" name="weight" id="dayWeight" tabindex="0" maxlength="3"
+                    placeholder="What did you weight this morning?">
+            </div>
+            <button class="input" tabindex="2">+ Add Section</button>
         </div>
     </div>
     <!--<div tabindex="-1" class="option-menu-container">

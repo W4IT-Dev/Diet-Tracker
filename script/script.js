@@ -1,7 +1,5 @@
 document.querySelector('#list .list-item').focus();
 
-
-
 document.addEventListener('keydown', e => {
     if (e.key.includes("Arrow")) e.preventDefault();
 
