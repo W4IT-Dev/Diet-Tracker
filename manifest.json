@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "name": "Diet Tracker",
+  "description": "Track your body weight, calories and more.",
+  "type": "web",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/img/icons/icon_56.png",
+    "112": "/img/icons/icon_112.png"
+  },
+  "developer": {
+    "name": "W4IT Dev",
+    "url": "https://www.kaiostech.com"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Diet Tracker",
+      "subtitle": "Track your body weight, calories and more.",
+      "description": "ParkAlert is the perfect app for anyone who frequently forgets where they parked their car. With ParkAlert, you can easily save the location of your parked car using GPS, and set customized reminders for when you need to return to your car. No more wandering around aimlessly in the parking lot, searching for your vehicle! ParkAlert also allows you to view your parking history and share your parking location."
+    }
+  },
+  "default_locale": "en-US"
+}

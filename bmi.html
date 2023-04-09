@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/script/bmi.js" defer></script>
+    <script src="script/variables.js" defer></script>
+    <script src="script/functions.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="darkgreen">
+</head>
+
+<body>
+    <header style="background-color: darkgreen;">BMI</header>
+    <div
+        style="position: relative; top: var(--header-height); display: flex; flex-direction: column; gap: 0.5rem; justify-content: center;">
+        <div>
+            <label for="weight">Weight:</label>
+            <input type="number" class="input" name="weight" id="weight" tabindex="0" maxlength="3"
+                placeholder="Input weight in kg">
+        </div>
+        <div>
+            <label for="height">Height:</label>
+            <input type="number" class="input" name="height" id="height" tabindex="1" min="50" max="300"
+                placeholder="Input height in cm">
+        </div>
+        <button class="input" onclick="calc();" tabindex="2">Calculate</button>
+    </div>
+    <div id="footer2in">
+        <div id="left"></div>
+        <div id="center"  style="overflow: visible"></div>
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>
